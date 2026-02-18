@@ -24,6 +24,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   background: rgba(255,255,255,.9);
   border-bottom: 1px solid #e7e7e7;
+  z-index: 1000;
 }
 
 .header__inner {
@@ -231,4 +232,160 @@ a { color: inherit; text-decoration: none; }
     justify-items: center;
   }
 }
+
+/* Portfolio / Case */
+.case{
+  display: grid;
+  gap: 16px;
+}
+
+.case__title{
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.case__facts{
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: #444;
+}
+
+.case__facts b{
+  color: #111;
+}
+
+.case__gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.case__gallery img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+}
+
+/* Desktop */
+@media (min-width: 900px){
+  .case{
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+
+  .case__gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .case__gallery img{
+    height: 180px;
+  }
+}
+
+
+.case__gallery img{
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.case__gallery img:hover{
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+/* Trust + Steps */
+.trust-grid{
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.trust-card{
+  padding: 16px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.trust-card h3{
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.trust-list{
+  margin: 0;
+  padding-left: 18px;
+  color: #444;
+  display: grid;
+  gap: 8px;
+}
+
+.steps-list{
+  margin: 0;
+  padding-left: 18px;
+  color: #444;
+  display: grid;
+  gap: 10px;
+}
+
+.steps-list li b{
+  display: block;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.steps-list li span{
+  display: block;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Desktop */
+@media (min-width: 900px){
+  .trust-grid{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+section { scroll-margin-top: 80px; }
+/* Contacts */
+.contacts-section{
+  text-align: center;
+}
+
+.contacts-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-content{
+  max-width: 500px;
+}
+
+.contacts-subtitle{
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.contacts-info{
+  margin-bottom: 20px;
+  color: #444;
+  display: grid;
+  gap: 6px;
+}
+
+.contacts-info a{
+  color: #111;
+  font-weight: 500;
+}
+
+.btn-large{
+  padding: 14px 24px;
+  font-size: 16px;
+}
+
 

@@ -28,33 +28,37 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__grid">
-      <div>
-        <h1 class="h1">Отделка коммерческих помещений для ресторанов</h1>
-        <p class="lead">
-          Занимаемся отделкой коммерческих помещений под ключ.<br>
-          Работаем по договору, соблюдаем сроки, отвечаем за результат.
-        </p>
+  <!-- HERO -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <h1 class="h1">Отделка коммерческих помещений для ресторанов</h1>
+      <p class="lead">
+        Занимаемся отделкой коммерческих помещений под ключ.<br>
+        Работаем по договору, соблюдаем сроки, отвечаем за результат.
+      </p>
 
-        <ul class="chips">
-          <li>Договор и смета</li>
-          <li>Контроль качества</li>
-          <li>Сроки под запуск</li>
-          <li>Гарантия на работы</li>
-        </ul>
+      <ul class="chips">
+        <li>Договор и смета</li>
+        <li>Контроль качества</li>
+        <li>Сроки под запуск</li>
+        <li>Гарантия на работы</li>
+      </ul>
 
-        <div class="hero__cta">
-          <a class="btn" href="#contacts">Обсудить проект</a>
-          <a class="btn btn--ghost" href="#portfolio">Смотреть кейс</a>
-        </div>
-      </div>
-
-      <div class="hero__media">
-        <!-- пока заглушка, потом поставим фото -->
-        <div class="hero__placeholder">Фото/видео объекта (ресторана)</div>
+      <div class="hero__cta">
+        <a class="btn" href="#contacts">Обсудить проект</a>
+        <a class="btn btn--ghost" href="#portfolio">Смотреть кейс</a>
       </div>
     </div>
+
+    <div class="hero__media">
+      <div class="hero__placeholder">Фото/видео объекта (ресторана)</div>
+    </div>
+  </div>
+</section>
+
+
+
   <!-- ABOUT -->
 <section class="section" id="about">
   <div class="container">
@@ -135,7 +139,7 @@
     <div class="process process--vertical">
       <div class="video video--vertical">
         <video controls preload="metadata">
-          <source src="assets/video/process-1.mp4" type="video/mp4" />
+          <source src="assets/video/video1.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -153,14 +157,94 @@
     </div>
   </div>
 </section>
-
-<section id="contacts" class="section section--muted">
+<!-- PORTFOLIO -->
+<section class="section section--muted" id="portfolio">
   <div class="container">
-    <h2 class="h2">Контакты</h2>
-    <p class="text">Телефон / WhatsApp / Telegram</p>
+    <h2 class="h2">Портфолио: кейс ресторана</h2>
+
+    <div class="case">
+      <div class="case__text">
+        <h3 class="case__title">Отделка ресторана под запуск</h3>
+        <p class="text">
+          Коротко опишем задачу и результат: что нужно было сделать, в какие сроки, какие требования были важны.
+        </p>
+
+        <ul class="case__facts">
+          <li><b>Формат:</b> коммерческий объект</li>
+          <li><b>Работы:</b> покраска / подготовка / отделка</li>
+          <li><b>Срок:</b> … дней</li>
+          <li><b>Особенность:</b> аккуратно, под запуск бизнеса</li>
+        </ul>
+      </div>
+
+      <div class="case__gallery">
+        <img src="assets/img/r1.jpg" alt="Ресторан — фото 1" loading="lazy">
+        <img src="assets/img/r2.jpg" alt="Ресторан — фото 2" loading="lazy">
+        <img src="assets/img/r3.jpg" alt="Ресторан — фото 3" loading="lazy">
+        <img src="assets/img/r4.jpg" alt="Ресторан — фото 4" loading="lazy">
+        <img src="assets/img/r1.jpg" alt="Ресторан — фото 1" loading="lazy">
+        <img src="assets/img/r2.jpg" alt="Ресторан — фото 2" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- TRUST + STEPS -->
+<section class="section" id="trust">
+  <div class="container">
+    <h2 class="h2">Почему нам доверяют</h2>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <h3>Отстройка и ответственность</h3>
+        <ul class="trust-list">
+          <li>Работаем по договору и смете</li>
+          <li>Соблюдаем сроки</li>
+          <li>Не срываем запуск бизнеса</li>
+          <li>Прозрачная стоимость</li>
+          <li>Ответственность за результат</li>
+        </ul>
+      </div>
+
+      <div class="trust-card">
+        <h3>Как мы работаем</h3>
+        <ol class="steps-list">
+          <li><b>Обсуждение задачи</b><span>Уточняем формат объекта, сроки и ожидания.</span></li>
+          <li><b>Смета и сроки</b><span>Фиксируем объём работ и понятный план.</span></li>
+          <li><b>Выполнение работ</b><span>Организуем процесс и контролируем качество.</span></li>
+          <li><b>Сдача + гарантия</b><span>Приёмка по этапам и гарантийные обязательства.</span></li>
+        </ol>
+      </div>
+    </div>
   </div>
 </section>
 
 
+<!-- CONTACTS -->
+<section id="contacts" class="section section--muted contacts-section">
+  <div class="container contacts-wrapper">
+
+    <div class="contacts-content">
+      <h2 class="h2">Связаться с нами</h2>
+      <p class="contacts-subtitle">
+        Обсудим ваш объект, сроки и бюджет. Ответим в рабочее время.
+      </p>
+
+      <div class="contacts-info">
+        <p><b>Телефон:</b> <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        <p><b>WhatsApp:</b> <a href="https://wa.me/70000000000" target="_blank">Написать</a></p>
+        <p><b>Telegram:</b> <a href="https://t.me/username" target="_blank">@username</a></p>
+      </div>
+
+      <a href="tel:+70000000000" class="btn btn-large">
+        Связаться с нами
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
 </body>
+
 </html>
