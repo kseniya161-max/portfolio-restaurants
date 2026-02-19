@@ -84,7 +84,7 @@ a { color: inherit; text-decoration: none; }
   }
 }
 
-.hero { padding: 100px 0; }
+.hero { padding: 140px 0; }
 
 .h1 { font-size: 32px; line-height: 1.15; margin: 0 0 12px; }
 .lead { margin: 0 0 16px; color: #333; }
@@ -291,12 +291,14 @@ a { color: inherit; text-decoration: none; }
 
 .case__gallery img{
   width: 100%;
-  height: 160px;
+  aspect-ratio: 4 / 3;   /* или 3/2 если хочешь шире */
+  height: auto;
   object-fit: cover;
   border-radius: 16px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid rgba(0,0,0,0.06);
   background: #fff;
 }
+
 
 /* Desktop */
 @media (min-width: 900px){
@@ -568,3 +570,16 @@ body {
 }
 
 }
+
+.case__gallery img{ height: 210px; }
+@media (min-width: 900px){
+  .case__gallery img{ height: 230px; }
+}
+.case__gallery{ gap: 14px; }
+
+.h1, .h2{ letter-spacing: -0.02em; }
+.lead{ font-size: 17px; line-height: 1.65; }
+
+
+
+
